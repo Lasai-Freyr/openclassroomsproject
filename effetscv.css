@@ -1,0 +1,146 @@
+	
+
+	body
+{
+	background-image: url(images/fondcv.jpg);
+}
+@font-face {
+    font-family: '2-Questa_Regular';
+    src: url('2-Questa_Regular-webfont.woff2') format('woff2'),
+         url('2-Questa_Regular-webfont.woff') format('woff'),
+         url('1942.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.conteneurhead
+{
+	display: flex;
+	flex-direction: row;
+
+}
+.presentation
+{
+	margin-left: 20px;
+	margin-top: 70px;
+	min-width: 120px;
+}
+
+section
+{
+	
+}
+
+
+.conteneurcorps
+{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+	align-content: left;
+	justify-content: center;
+	margin: auto;
+	width: auto;
+	margin-top: 150px;
+}
+.formation:nth-child(1)
+ {
+ 	order:1;
+ 	
+ 	
+ }
+.experiences:nth-child(3) 
+{
+	order:3;
+	
+}
+
+.competences:nth-child(2) 
+{
+	order:2;
+
+}
+.centresint:nth-child(4)
+{
+	order:4;
+}
+
+
+.formation
+{
+	
+}
+.experiences
+{
+	
+}
+.competences
+{
+	text-align: left;
+	margin-right: 200px;
+	margin-left: 40px;
+	
+}
+.centresint
+{
+	text-align: left;
+	margin-right: 270px;
+	margin-left: 40px;
+}
+.proj
+{
+	
+	border: 3px red solid;
+	box-shadow: 2px 2px 0px;
+	width:650px;
+	margin-top: 160px;
+	margin-left: 660px;
+	height: 80px;
+	padding: 5px;
+}
+.compinter
+{
+	max-width: 30%;
+}
+
+
+.imageflottante
+{
+	float: left;
+}
+h3
+{
+	color: grey;
+}
+h1
+{color: blue;
+	font-family: '2-Questa_Regular',Arial;
+	
+}
+h2
+{
+	text-decoration: underline;
+}
+.dessous
+{
+	clear: both;
+}
+
+#lisseret
+{
+	 width: 8%;
+    margin-right: 2%;
+    height: 1000px;
+    background-color: blue;
+    border-radius: 10px;
+}
+@media all and (max-width: 1024px)
+{
+	#lisseret
+	{
+		display: none;
+	}
+	.conteneurcorps
+	{
+		display: column;
+	}
+}
