@@ -1,0 +1,151 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+#head h2
+{
+    margin-left: 40px;
+    /*border: 2px green solid;*/
+    margin-top: 0px;
+    color: #546E7A;
+    font-size: 40px;
+}
+
+h1{
+    font-size: 60px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+
+
+#lisseret
+{
+    width: 30%;
+    background-color: #FFC400;
+    text-align: left;
+    text-align: justify;
+    height: 1650px;    
+}
+#loisirs
+{
+    color: #546E7A;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    
+}
+
+.image
+{
+   margin-top: 15px;
+   margin-left: 20%;
+   
+    
+}
+
+#lisseret, #corpus
+{
+    display: inline-block;
+    vertical-align: top;
+}
+#lisseret h2
+{
+    color:#FFC400;
+    background-color:rgba(0,77,64 ,1) ;
+    text-align: center;
+}
+
+#lisseret p
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#propos
+{
+    height: 1000px;
+}
+
+#corpus
+{
+    width: 65%;
+}
+
+
+
+#formation section, #experiences section
+{
+    display: inline-block;
+    flex-direction: row;
+    min-width: 30%;
+    max-width: 50%;
+    text-align: justify;
+   vertical-align: top;
+    padding-left: 25px;
+    margin-left: 20px;  
+    border: 2px solid green;  
+}
+#formation h2, #experiences h2, #recommandation h2
+{
+    border-bottom: 2px solid  #FFC400;
+    width: 85%;
+    margin-left: 4%;
+    font-size: 35px;
+    font-weight: bold;
+
+    
+}
+
+
+
+#corpus .far,#corpus .fas
+{
+    color: #FFC400 ;
+}
+#corpus h3,#corpus p, #corpus ul
+{
+    color: #546E7A;
+}
+#corpus h3
+{
+    font-weight: bold;
+}
+ul
+{
+    list-style-type: none;;
+}
+ul li::before{
+    content:"\25E6";
+    margin-right:10px;
+    color:#FFC400;}
+
+    @media all and (max-width:990px)
+    {
+        #formation section, #experiences section
+        {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        }
+        #lisseret
+        {
+            background-color: blue;
+        }
+
+        #head h2
+        {
+            margin-left: 40px;
+          
+        }
+        
+        h1{
+            font-size: 50px;
+           
+        }
+
+
+    }
