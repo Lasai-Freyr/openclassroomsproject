@@ -26,7 +26,7 @@ h1{
     width: 30%;
     background-color: #FFC400;
     text-align: left;
-    text-align: justify;
+    text-align: left;
     height: 1650px;    
 }
 #loisirs
@@ -83,13 +83,13 @@ h1{
     flex-direction: row;
     min-width: 30%;
     max-width: 50%;
-    text-align: justify;
+    text-align: left;
    vertical-align: top;
     padding-left: 25px;
     margin-left: 20px;  
-    border: 2px solid green;  
+    
 }
-#formation h2, #experiences h2, #recommandation h2
+#formation h2, #experiences h2, #competences h2
 {
     border-bottom: 2px solid  #FFC400;
     width: 85%;
@@ -123,6 +123,12 @@ ul li::before{
     margin-right:10px;
     color:#FFC400;}
 
+#blank section
+{
+    width: 10%;
+    color: blue;
+}
+
     @media all and (max-width:990px)
     {
         #formation section, #experiences section
@@ -133,7 +139,7 @@ ul li::before{
         }
         #lisseret
         {
-            background-color: blue;
+            
         }
 
         #head h2
