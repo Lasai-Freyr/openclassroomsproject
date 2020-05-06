@@ -12,6 +12,17 @@ html, body {
     font-size: 40px;
 }
 
+#head
+{
+    width: 50%;
+    
+    position: relative;
+    left: 580px;
+    padding-top: 0px;
+   
+    
+}
+
 h1{
     font-size: 60px;
     margin-left: 40px;
@@ -27,7 +38,9 @@ h1{
     background-color: #FFC400;
     text-align: left;
     text-align: left;
-    height: 1720px;    
+    height: 1745px;  
+    position: absolute; 
+    top: 0px; 
 }
 
 #loisirs
@@ -73,6 +86,10 @@ h1{
 #corpus
 {
     width: 65%;
+    position: absolute;
+    left: 550px;
+    top: 200px;
+   
 }
 
 
@@ -177,7 +194,22 @@ ul
         }
         #lisseret
         {
-          height: 2940px;  
+          height: 2740px;
+          position: absolute;
+           top: 150px;  
+        }
+
+        #corpus
+        {  position: relative;
+            left: 280px;
+            top: -50px;           
+        }
+
+        #head
+        {  position: relative;
+            left: 10px;
+            top: -10px; 
+                 
         }
 
         #head h2
