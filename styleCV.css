@@ -42,7 +42,9 @@ h1{
 .image
 {
    margin-top: 15px;
-   margin-left: 20%;    
+   margin-left: 30%;
+   width: 200px;
+   clip-path: ellipse(50% 40%);
 }
 
 #lisseret, #corpus
@@ -185,13 +187,18 @@ ul
         }
         
         h1{
-            font-size: 50px;
-           
+            font-size: 50px;           
         }
 
         #propos
         {
             height: 600px;
+        }
+
+        .image
+        {
+            max-width: 120px;
+            margin-left: 25%;
         }
 
     }
