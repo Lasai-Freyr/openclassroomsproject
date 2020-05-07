@@ -1,4 +1,6 @@
 html, body {
+    margin: 0em;
+    padding: 0em;
 	
 }
 
@@ -7,6 +9,7 @@ html, body {
     margin: auto;
     margin-top: 0em;
     margin-bottom: 0em;
+    padding: 0em;
     max-width: 1000px;
     display:flex;
    flex-flow: column wrap-reverse;    
@@ -228,7 +231,7 @@ ul
         #lisseret
         {   order:1;
             flex:0 1 auto;
-          height: 2550px;
+          height: 2600px;
           max-width: 25%;
           margin-left: 0px;
           margin-top: 0px;
