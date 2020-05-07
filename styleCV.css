@@ -5,6 +5,8 @@ html, body {
 .OFA
 {
     margin: auto;
+    margin-top: 0em;
+    margin-bottom: 0em;
     max-width: 1000px;
     display:flex;
    flex-flow: column wrap-reverse;    
