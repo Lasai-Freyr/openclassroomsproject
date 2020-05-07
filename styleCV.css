@@ -8,7 +8,7 @@ html, body {
     max-width: 1000px;
     display:flex;
    flex-flow: column wrap-reverse;    
-    border: 2px solid green;
+   /* border: 2px solid green;*/
     height: 2100px;
     box-sizing: border-box;
     justify-content:center ;
@@ -293,7 +293,4 @@ ul
             font-size: 25px;
             padding-right: 0px;
         }
-
-
-
-    }
+   
