@@ -1,6 +1,5 @@
 html, body {
-	padding: 0;
-	margin: 0;
+	
 }
 
 .OFA
@@ -20,7 +19,7 @@ html, body {
 #lisseret
 {   order: 1;
     flex:1 1 auto;
-    border: 2px solid red;
+   /* border: 2px solid red;*/
     width: 25%;
     background-color: #FFC400;
     text-align: left;
@@ -33,7 +32,7 @@ html, body {
 #head
 {
     order: -1;
-    border: 2px solid purple;
+    /*border: 2px solid purple;*/
     max-width: 60%;
     margin-right: 150px;
     display: inline-block;
@@ -43,8 +42,8 @@ html, body {
 
 #corpus
 {   order: 0;
-    width: 69%;
-    border: 2px solid blue;
+    width: 70%;
+    /*border: 2px solid blue;*/
     display: inline-block;
     flex:1 1 auto;
     margin-right: 50px;
@@ -180,7 +179,7 @@ vertical-align: top;
 
 ul
 {
-    list-style-type: none;;
+    list-style-type: none;
 }
 
 #experiences ul li::before
@@ -202,7 +201,7 @@ ul
 
 
 
-    @media all and (max-width:990px)
+    @media all and (max-width:1010px)
     {
         #formation section, #experiences section
         {
@@ -210,34 +209,56 @@ ul
         flex-direction: column;
         width: auto;
         }
-        #lisseret
+
+        .OFA
         {
-          height: 2800px;
-          position: absolute;
-           top: 150px;  
+            
+            display:flex;
+           flex-flow: row wrap;    
+           /* border: 2px solid green;*/
+            height: 2700px;
+            box-sizing: border-box;
+            justify-content: flex-start; 
+            align-items: flex-start;
+           padding: 0;        
+        }
+
+        #lisseret
+        {   order:1;
+            flex:0 1 auto;
+          height: 2550px;
+          max-width: 25%;
+          margin-left: 0px;
+          margin-top: 0px;
+        
         }
 
         #corpus
-        {  position: relative;
-            left: 280px;
-            top: -50px;           
+        {   order:2;
+            flex:0 1 auto;
+            max-width: 66%;
+            margin-right: 0px;
+
+                    
         }
 
         #head
-        {  position: relative;
-            left: 10px;
-            top: -10px; 
-                 
+         {  order: 0;
+            flex:0 1 auto; 
+            width: 950px;
+            height: 140px; 
+            /*margin-bottom: -200px;       */
         }
 
         #head h2
         {
             margin-left: 40px;
+            
           
         }
         
         h1{
-            font-size: 50px;           
+            font-size: 40px;           
         }
 
         #propos
@@ -247,8 +268,32 @@ ul
 
         .image
         {
-            max-width: 120px;
-            margin-left: 25%;
+            max-width: 110px;
+            margin-left: 20%;
         }
+
+        #lisseret h2
+        {
+            font-size: 18px;
+        }
+
+        #lisseret p
+        {
+             padding-left: 25px;
+             padding-right: 25px;
+        }
+
+        p
+        {
+            font-size: 15px;
+        }
+            
+        #corpus h2
+        {
+            font-size: 25px;
+            padding-right: 0px;
+        }
+
+
 
     }
