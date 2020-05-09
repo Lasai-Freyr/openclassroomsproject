@@ -1,6 +1,6 @@
 html, body {
-    margin: 0em;
-    padding: 0em;
+    margin: 0;
+    padding: 0;
 	
 }
 
@@ -212,7 +212,8 @@ ul
         {
         display: flex;
         flex-direction: column;
-        width: auto;
+        min-width: 45%;
+        max-width: 80%;  
         }
 
         .OFA
@@ -298,4 +299,15 @@ ul
             font-size: 25px;
             padding-right: 0px;
         }
-   
+    
+        #langues
+        {
+            width: 400px;
+            padding-left: 20px;
+        }
+        #informatique
+        {
+            width: 400px;
+           
+        }
+    }
