@@ -22,10 +22,10 @@ html, body
 
 #lisseret
 {   
-    width: 40%;
+    width: 45%;
     background-color: #FFC400;
     text-align: left;
-    height: 2000px;
+    height: 1950px;
     vertical-align: top;
     display: inline-block;    
 }
@@ -108,7 +108,7 @@ h1
 .date
 {
     width: 200px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .description
@@ -193,7 +193,7 @@ h1
 
  p, #corpus ul
 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 ul
