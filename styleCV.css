@@ -155,22 +155,16 @@ h1
     max-width: 45%;
 }
 
-#langues
-{
-    width: 800px;
-}
 
 #langues section, #informatique section
 {
     padding-left: 5px;
     margin-left: 0px;
-    padding-top: 0px;   
+    padding-top: 0px; 
+     
 }
 
-#informatique
-{
-    width: 800px;
-}
+
 
 #corpus section .far,#corpus section .fas
 {
@@ -212,6 +206,14 @@ ul
     content:"\25E6";
     margin-right:10px;
     color:#FFC400;
+}
+
+#langues, #informatique, .iconecomp
+{
+    display:inline-flex;
+    flex-direction: row;
+    vertical-align: top;
+    margin-left: 35px;    
 }
 
     @media all and (max-width:1010px)
@@ -323,6 +325,12 @@ ul
 
       #competences section
       {
-          width: 45%;
+         max-width: 100%;
       }
-    }
+      #langues, #informatique, .iconecomp
+      {
+          display:inline-block;
+          flex-direction: row;
+          vertical-align: top;
+      }
+    
