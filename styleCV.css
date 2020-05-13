@@ -111,18 +111,6 @@ h1
     font-size: 20px;
 }
 
-.description
-{
-    
-}*/
-
-.icone, .date
-{
-    display:flex;
-    flex-direction: row;
-    vertical-align: top;   
-}
-
 #formation section, #experiences section
 {
     display:inline-flex;
