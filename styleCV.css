@@ -20,7 +20,7 @@ html, body
 
 
 
-#lisseret
+nav
 {   
     width: 45%;
     background-color: #FFC400;
@@ -76,20 +76,20 @@ h1
    clip-path: ellipse(50% 40%);
 }
 
-#lisseret, #corpus
+nav, #corpus
 {
     display: inline-block;
     vertical-align: top;
 }
 
-#lisseret h2
+nav h2
 {
     color:#FFC400;
     background-color:rgba(0,77,64 ,1) ;
     text-align: center;
 }
 
-#lisseret p
+nav p
 {
     padding-left: 40px;
     padding-right: 40px;
@@ -204,6 +204,27 @@ ul
     margin-left: 35px;    
 }
 
+    @media all and (max-width:1360px)
+    {
+        #competences section
+      {
+         max-width: 100%;
+      }
+      #langues, #informatique, .iconecomp
+      {
+          display:inline-block;
+          flex-direction: row;
+          vertical-align: top;
+      }
+
+      nav
+        { 
+            height: 2350px;
+            margin-left: 0px;
+            margin-top: 0px;    
+        }
+    }
+
     @media all and (max-width:1010px)
     {
        
@@ -216,9 +237,9 @@ ul
             padding: 0;        
         }
 
-        #lisseret
+        nav
         { 
-            height: 1000px;
+            height: 960px;
             width: 100%;
             margin-left: 0px;
             margin-top: 0px;    
@@ -241,12 +262,12 @@ ul
         }
 
 
-        #lisseret h2
+        nav h2
         {
             font-size: 25px;
         }
 
-        #lisseret p
+        nav p
         {
             padding-left: 40px;
             padding-right: 40px;
