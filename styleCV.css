@@ -18,8 +18,6 @@ html, body
     background-color: white;
 }
 
-
-
 nav
 {   
     width: 45%;
@@ -143,16 +141,12 @@ nav p
     max-width: 45%;
 }
 
-
 #langues section, #informatique section
 {
     padding-left: 5px;
     margin-left: 0px;
-    padding-top: 0px; 
-     
+    padding-top: 0px;      
 }
-
-
 
 #corpus section .far,#corpus section .fas
 {
@@ -204,142 +198,143 @@ ul
     margin-left: 35px;    
 }
 
-    @media all and (max-width:1360px)
+ @media all and (max-width:1360px)
+{
+    #competences section
     {
-        #competences section
-      {
-         max-width: 100%;
-      }
-      #langues, #informatique, .iconecomp
-      {
-          display:inline-block;
-          flex-direction: row;
-          vertical-align: top;
-      }
-
-      nav
-        { 
-            height: 2350px;
-            margin-left: 0px;
-            margin-top: 0px;    
-        }
+        max-width: 100%;
     }
 
-    @media all and (max-width:1010px)
+    #langues, #informatique, .iconecomp
     {
-       
-        .OFA
-        {            
-            display:flex;
-            flex-flow: column;
-            justify-content: flex-start; 
-            align-items: flex-start;
-            padding: 0;        
-        }
+        display:inline-block;
+        flex-direction: row;
+        vertical-align: top;
+    }
 
-        nav
-        { 
-            height: 960px;
-            width: 100%;
-            margin-left: 0px;
-            margin-top: 0px;    
-        }
+    nav
+    { 
+        height: 2350px;
+        margin-left: 0px;
+        margin-top: 0px;    
+    }
+}
 
-        .image
-        {
-            max-width: 140px;
-            margin-left: 45%;
-        }
+@media all and (max-width:1010px)
+{
+    .OFA
+    {            
+        display:flex;
+        flex-flow: column;
+        justify-content: flex-start; 
+        align-items: flex-start;
+        padding: 0;        
+    }
 
-        #contact
-        {
-            text-align: center;
-        }
+    nav
+    { 
+        height: 960px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;    
+    }
 
-        #propos
-        {
-            height: 260px;
-        }
+    .image
+    {
+        max-width: 140px;
+        margin-left: 45%;
+    }
 
+    #contact
+    {
+        text-align: center;
+    }
 
-        nav h2
-        {
-            font-size: 25px;
-        }
+    #propos
+    {
+        height: 260px;
+    }
 
-        nav p
-        {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
+    nav h2
+    {
+        font-size: 25px;
+    }
 
-        p, ul
-        {
-            font-size: 23px;
-        }
+    nav p
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-        .name
-        {
-            visibility: visible;
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-        }
+    p, ul
+    {
+        font-size: 23px;
+    }
 
-        #corpus
-        {   
-            margin-right: 0px;
-            width: 100%;                    
-        }
+    .name
+    {
+        visibility: visible;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    #corpus
+    {   
+        margin-right: 0px;
+        width: 100%;                    
+    }
      
-        #corpus h2
-        {
-            font-size: 30px;
-            padding-right: 0px;
-        }
+    #corpus h2
+    {
+        font-size: 30px;
+        padding-right: 0px;
+    }
 
-        #head
-        {
-            display: none;
-        }
+    #head
+    {
+        display: none;
+    }
 
-        #formation section, #experiences section
-        {
-            display: flex;
-            flex-direction: row;
-            min-width: 45%;
-            max-width: 90%;  
-        }
+    #formation section, #experiences section
+    {
+        display: flex;
+        flex-direction: row;
+        min-width: 45%;
+        max-width: 90%;  
+    }
        
-        #head h2
-        {
-            margin-left: 40px;
-        }
+    #head h2
+    {
+        margin-left: 40px;
+    }
         
-        h1
-        {
-            font-size: 40px;           
-        }
+    h1
+    {
+        font-size: 40px;           
+    }
 
-        .description
-        {
-            margin-left: 35px;
-        }
+    .description
+    {
+        margin-left: 35px;
+    }
           
-        #competences
-        {
-            display: flex;
-            flex-direction: column;
-        }
+    #competences
+    {
+        display: flex;
+        flex-direction: column;
+    }
 
-      #competences section
-      {
-         max-width: 100%;
-      }
-      #langues, #informatique, .iconecomp
-      {
-          display:inline-block;
-          flex-direction: row;
-          vertical-align: top;
-      }
+    #competences section
+    {
+        max-width: 100%;
+    }
+
+    #langues, #informatique, .iconecomp
+    {
+        display:inline-block;
+        flex-direction: row;
+        vertical-align: top;
+    }
+}
     
