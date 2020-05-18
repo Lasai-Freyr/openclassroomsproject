@@ -2,15 +2,22 @@ html, body
 {
     margin: 0;
     padding: 0;
+    background-color:rgb(216, 211, 211);
 }
 
-.OFA
+@font-face
+{
+    font-family: 'exo2';
+    src: url(police/Exo2-VariableFont_wght.ttf) format(truetype);
+}
+
+.container
 {
     margin: auto;
     margin-top: 0em;
     margin-bottom: 0em;
     padding: 0em;
-    max-width: 1500px;
+    max-width: 1200px;
     display:flex;
     flex-flow: row;    
     /*border: 2px solid green;*/
@@ -23,7 +30,6 @@ nav
     width: 45%;
     background-color: #FFC400;
     text-align: left;
-    height: 1950px;
     vertical-align: top;
     display: inline-block;    
 }
@@ -31,6 +37,11 @@ nav
 .name
 {
     visibility: hidden;
+}
+
+span
+{
+    color: #FFC400;
 }
 
 #head
@@ -47,6 +58,7 @@ nav
     margin-top: 0px;
     color: #546E7A;
     font-size: 40px;
+    font-family: "exo2",Arial, Helvetica, sans-serif;
 }
 
 h1
@@ -55,6 +67,7 @@ h1
     margin-left: 40px;
     margin-bottom: 5px;
     font-weight: normal;
+    font-family: "exo2",Arial, Helvetica, sans-serif;
 }
 
 #loisirs
@@ -63,7 +76,7 @@ h1
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 30px;    
+    font-size: 30px;
 }
 
 .image
@@ -80,24 +93,20 @@ nav, #corpus
     vertical-align: top;
 }
 
-nav h2
+nav h3
 {
     color:#FFC400;
     background-color:rgba(0,77,64 ,1) ;
     text-align: center;
+    font-family: "exo2",Arial, Helvetica, sans-serif;
 }
 
 nav p
 {
     padding-left: 40px;
     padding-right: 40px;
+    font-family: "exo2",Arial, Helvetica, sans-serif;
 }
-
-#propos
-{
-    height: 1000px;
-}
-
 .icone
 {
     width: 40px;
@@ -106,31 +115,33 @@ nav p
 .date
 {
     width: 200px;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: "exo2",Arial, Helvetica, sans-serif;
 }
 
-#formation section, #experiences section
+.principal article
 {
     display:inline-flex;
     flex-direction: row;
     min-width: 30%;
     max-width: 50%;
     text-align: left;
-   vertical-align: top;
+    vertical-align: top;
     padding-left: 25px;
     margin-left: 20px;     
 }
 
-#formation h2, #experiences h2, #competences h2
+#corpus h2
 {
     border-bottom: 2px solid  #FFC400;
     width: 90%;
     margin-left: 4%;
     font-size: 35px;
-    font-weight: bold;    
+    font-weight: bold;
+    font-family: "exo2",Arial, Helvetica, sans-serif;    
 }
 
-#competences section
+footer article
 {
     display: inline-block;
     flex-direction: row;
@@ -138,20 +149,24 @@ nav p
     vertical-align: top;
     padding-left: 25px;
     margin-left: 20px;
-    max-width: 45%;
-}
-
-#langues section, #informatique section
-{
+    max-width: 50%;
     padding-left: 5px;
     margin-left: 0px;
-    padding-top: 0px;      
+    padding-top: 0px;
+    margin-left: 35px;  
 }
 
-#corpus section .far,#corpus section .fas
+#langues, #informatique, .iconecomp
+{
+    display:inline-block;
+    flex-direction: row;
+    vertical-align: top;
+}
+
+#corpus article .far,#corpus article .fas
 {
     color: #FFC400 ;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .titre .fas, .titre .far
@@ -160,7 +175,7 @@ nav p
     font-size: 40px;
 }
 
-#corpus h3,#corpus p, #corpus ul
+#corpus h3,#corpus p, #corpus ul, .date
 {
     color: #546E7A;   
 }
@@ -171,11 +186,13 @@ nav p
     margin-top: 0px;
     font-size: 28px;
     margin-bottom: 5px;
+    font-family: "exo2",Arial, Helvetica, sans-serif;
 }
 
- p, #corpus ul
+ p, ul
 {
-    font-size: 20px;
+    font-size: 18px;
+    font-family: "exo2",Arial, Helvetica, sans-serif;
 }
 
 ul
@@ -183,46 +200,16 @@ ul
     list-style-type: none;
 }
 
-#experiences ul li::before
+#corpus ul li::before
 {
     content:"\25E6";
     margin-right:10px;
     color:#FFC400;
 }
 
-#langues, #informatique, .iconecomp
-{
-    display:inline-flex;
-    flex-direction: row;
-    vertical-align: top;
-    margin-left: 35px;    
-}
-
- @media all and (max-width:1360px)
-{
-    #competences section
-    {
-        max-width: 100%;
-    }
-
-    #langues, #informatique, .iconecomp
-    {
-        display:inline-block;
-        flex-direction: row;
-        vertical-align: top;
-    }
-
-    nav
-    { 
-        height: 2350px;
-        margin-left: 0px;
-        margin-top: 0px;    
-    }
-}
-
 @media all and (max-width:1010px)
 {
-    .OFA
+    .container
     {            
         display:flex;
         flex-flow: column;
@@ -233,10 +220,10 @@ ul
 
     nav
     { 
-        height: 960px;
         width: 100%;
         margin-left: 0px;
-        margin-top: 0px;    
+        margin-top: 0px;
+        padding-bottom: 10px;    
     }
 
     .image
@@ -250,12 +237,7 @@ ul
         text-align: center;
     }
 
-    #propos
-    {
-        height: 260px;
-    }
-
-    nav h2
+    nav h3
     {
         font-size: 25px;
     }
@@ -266,11 +248,7 @@ ul
         padding-right: 40px;
     }
 
-    p, ul
-    {
-        font-size: 23px;
-    }
-
+    
     .name
     {
         visibility: visible;
@@ -294,9 +272,10 @@ ul
     #head
     {
         display: none;
+        width: 50%;
     }
 
-    #formation section, #experiences section
+    #corpus article
     {
         display: flex;
         flex-direction: row;
@@ -311,7 +290,8 @@ ul
         
     h1
     {
-        font-size: 40px;           
+        font-size: 40px;
+        font-family: "exo2",Arial, Helvetica, sans-serif;           
     }
 
     .description
@@ -319,13 +299,13 @@ ul
         margin-left: 35px;
     }
           
-    #competences
+    footer
     {
         display: flex;
         flex-direction: column;
     }
 
-    #competences section
+    footer article
     {
         max-width: 100%;
     }
@@ -335,6 +315,7 @@ ul
         display:inline-block;
         flex-direction: row;
         vertical-align: top;
+        margin-left: 30px;
     }
 }
     
