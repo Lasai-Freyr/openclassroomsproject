@@ -82,6 +82,11 @@ h1
     font-size: 30px;
 }
 
+#loisirs a 
+{
+    color: #546E7A;   
+}
+
 .image
 {
    margin-top: 15px;
@@ -115,13 +120,15 @@ nav p
 .icone
 {
     width: 40px;
+    padding-top: 9px;
 }
 
 .date
 {
     width: 200px;
     font-size: 18px;
-    font-family: "exo2",Arial, Helvetica, sans-serif;
+    font-family: "exo2",Arial, Helvetica, sans-serif;    
+    padding-top: 7px;
 }
 
 .principal article
@@ -194,7 +201,7 @@ footer p
 {
     font-weight: bold;
     margin-top: 0px;
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 5px;
     font-family: "exo2",Arial, Helvetica, sans-serif;
 }
