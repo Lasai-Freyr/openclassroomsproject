@@ -231,6 +231,11 @@ ul
     {
         max-width:100%;
     }
+
+    .lang 
+    {
+        margin-left: 75px;
+    }
 }
 
 @media all and (max-width:954px)
@@ -333,9 +338,14 @@ ul
         vertical-align: top;
     }
 
-    #langues
+    #langues, #informatique
     {
         margin-left: 50px;
+    }
+    
+    .lang 
+    {
+        margin-left: 75px;
     }
 }
     
