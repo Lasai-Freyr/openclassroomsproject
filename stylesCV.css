@@ -36,6 +36,7 @@ nav
 .name
 {
     visibility: hidden;
+    font-family: 'exo2',Arial, Helvetica, sans-serif;
 }
 
 .prenom
@@ -119,8 +120,8 @@ nav p
 
 .icone
 {
-    width: 40px;
     padding-top: 9px;
+    margin-right: 4px;
 }
 
 .date
