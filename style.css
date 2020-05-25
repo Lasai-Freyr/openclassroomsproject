@@ -14,9 +14,6 @@ html, body
 .container
 {
     margin: auto;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    padding: 0em;
     max-width: 1200px;
     display:flex;
     flex-flow: row;    
@@ -28,14 +25,13 @@ nav
 {   
     width: 45%;
     background-color: #FFC400;
-    text-align: left;
-    vertical-align: top;
-    display: inline-block;    
+    text-align: left;    
 }
 
 .image-cont
 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
 }
@@ -60,7 +56,6 @@ header
 {   
     height: 200px;
     margin-right: 150px;
-    display: inline-block;
 }
 
 header h2
@@ -137,16 +132,20 @@ nav p
     padding-top: 7px;
 }
 
+.description
+{
+    max-width: 60%;
+}
+
 .principal article
 {
-    display:inline-flex;
+    display:flex;
     flex-direction: row;
     min-width: 30%;
-    max-width: 50%;
     text-align: left;
     vertical-align: top;
     padding-left: 25px;
-    margin-left: 20px;     
+    margin-left: 20px;
 }
 
 .principal h2, footer h2
@@ -165,13 +164,8 @@ footer article
     flex-direction: row;
     text-align: left;
     vertical-align: top;
-    padding-left: 35px;
-    margin-left: 20px;
-    max-width: 50%;
     padding-left: 5px;
     margin-left: 0px;
-    padding-top: 0px;
-    margin-left: 35px;  
 }
 
 footer p
@@ -232,11 +226,6 @@ ul
 
 @media all and (max-width:1130px)
 {
-    footer article
-    {
-        max-width:100%;
-    }
-
     .lang 
     {
         margin-left: 75px;
@@ -303,6 +292,12 @@ ul
     {
         font-size: 30px;
         padding-right: 0px;
+        margin-left: 4px;
+    }
+
+    #corpus h3
+    {
+        margin-top: 5px;
     }
 
     header
@@ -315,8 +310,11 @@ ul
     {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         min-width: 45%;
-        max-width: 90%;  
+        max-width: 90%;
+        padding-left:0px;  
+        margin-left: 10px;
     }
        
     header h2
@@ -331,9 +329,15 @@ ul
 
     .description
     {
-        margin-left: 35px;
+        margin-left: 20px;
+        max-width: none;
     }
-          
+      
+    .date
+    {
+        width: 70%;
+    }
+
     footer
     {
         display: flex;
@@ -343,7 +347,8 @@ ul
     footer article
     {
         max-width: 100%;
-        padding-left: 50px;
+        padding-left: 20px;
+        margin-left: 0px;
         display:inline-block;
         flex-direction: row;
         vertical-align: top;
@@ -351,12 +356,18 @@ ul
 
     #langues, #informatique
     {
-        margin-left: 50px;
+        padding-left: 10px;
     }
     
     .lang 
     {
         margin-left: 75px;
     }
+
+    ul
+    {
+        padding-left: 5px;
+    }
+
 }
     
