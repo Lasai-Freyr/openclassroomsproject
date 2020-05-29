@@ -25,7 +25,16 @@ nav
 {   
     width: 45%;
     background-color: #FFC400;
-    text-align: left;    
+    text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#propos
+{
+    margin-top: 20px;
+    height: 950px;
 }
 
 .image-cont
@@ -76,6 +85,13 @@ h1
     font-family: 'exo2',Arial, Helvetica, sans-serif;
 }
 
+.grd-loisirs
+{
+    height: 150px;
+    margin-bottom: 0px;
+}
+
+
 #loisirs
 {
     color: #546E7A;  
@@ -83,11 +99,19 @@ h1
     flex-direction: row;
     justify-content: space-around;
     font-size: 30px;
+    margin-bottom: 1px;
 }
 
 #loisirs a 
 {
     color: #546E7A;   
+}
+
+.loisir1, .loisir2, .loisir3, .loisir4
+{
+    border: 2px solid #546E7A;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .image
@@ -96,7 +120,7 @@ h1
    clip-path: ellipse(50% 40%);
 }
 
-nav, #corpus
+#corpus
 {
     display: inline-block;
     vertical-align: top;
@@ -137,7 +161,7 @@ nav p
     max-width: 60%;
 }
 
-.principal article
+.principal .grde-div
 {
     display:flex;
     flex-direction: row;
@@ -158,13 +182,13 @@ nav p
     font-family: "exo2",Arial, Helvetica, sans-serif;    
 }
 
-footer article
+footer .grde-div
 {
     display: inline-block;
     flex-direction: row;
     text-align: left;
     vertical-align: top;
-    padding-left: 5px;
+    padding-left: 100px;
     margin-left: 0px;
 }
 
@@ -173,14 +197,14 @@ footer p
     padding-left: 20px;
 }
 
-#langues, #informatique, .iconecomp
+#langues, #informatique
 {
     display:inline-block;
     flex-direction: row;
     vertical-align: top;
 }
 
-#corpus article .far,#corpus article .fas
+#corpus .grde-div .far,#corpus .grde-div .fas
 {
     color: #FFC400 ;
     font-size: 18px;
@@ -251,6 +275,11 @@ ul
         padding-bottom: 10px;    
     }
 
+    #propos
+    {
+        height: 240px;
+    }
+
     .image
     {
         max-width: 140px;
@@ -306,7 +335,7 @@ ul
         width: 50%;
     }
 
-    .principal article
+    .principal .grde-div
     {
         display: flex;
         flex-direction: row;
@@ -343,7 +372,7 @@ ul
         flex-direction: column;
     }
 
-    footer article
+    footer .grde-div
     {
         max-width: 100%;
         margin-left: 0px;
