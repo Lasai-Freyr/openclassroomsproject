@@ -421,5 +421,13 @@ ul
         height: 500px;
     }
     }
+
+    @media all and (max-width:215px)
+    {
+        #propos
+    {
+        height: 700px;
+    }
+    }
 }
     
