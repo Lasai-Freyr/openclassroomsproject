@@ -277,7 +277,7 @@ ul
 
     #propos
     {
-        height: 240px;
+        height: 280px;
     }
 
     .image
@@ -406,5 +406,20 @@ ul
         padding-left: 0px;
     }
 
+    @media all and (max-width:325px)
+    {
+        #propos
+    {
+        height: 420px;
+    }
+    }
+
+    @media all and (max-width:245px)
+    {
+        #propos
+    {
+        height: 500px;
+    }
+    }
 }
     
